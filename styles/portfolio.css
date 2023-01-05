@@ -3,6 +3,9 @@
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
+hr {
+    border: 1px solid #D1D1D1; 
+}
 .text-primary {
     color: #FD6E0A;
 }
@@ -16,12 +19,12 @@
     padding: 18px 35px;
     height: 64px;
 }
-.btn-cv {
+/* .btn-cv {
     width: 200px;
-}
-.btn-hire, .btn-submit {
+} */
+/* .btn-hire, .btn-submit {
     width: 150px;
-}
+} */
 .btn-contact {
     border: 0;
     width: 160px;
@@ -32,6 +35,7 @@
     font-size: 20px;
     color: #FD6E0A;
     background-color: transparent;
+    margin-left: 24px;
 }
 section {
     margin-top: 130px;
@@ -42,8 +46,9 @@ section {
     background-color: #FFF8F3;
     background-image: url('../images/header_bg.png'), url('../images/developer.png');
     background-repeat: no-repeat;
-    background-position: bottom right, left;
+    background-position: bottom right, 5%;
     /* overflow: hidden; */
+    /* background-size: auto, 100px 600px; */
 }
 nav {
     display: flex;
@@ -68,10 +73,13 @@ nav li {
 /* banner styles */
 
 .banner {
-    margin: 0 200px;
+    /* margin: 0 200px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.banner-intro {
+    margin-left: 200px;
 }
 .banner-greating {
     font-weight: 600;
@@ -226,7 +234,7 @@ main {
     margin-top: 113px;
     display: flex;
     column-gap: 117px;
-    padding: 113px 200px;
+    padding: 113px 100px;
     background: #FFF8F3;
 }
 .contact-description {
