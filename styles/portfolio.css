@@ -9,12 +9,29 @@
 .btn-primary {
     font-weight: 700;
     font-size: 20px;
-    line-height: 27px;
     background: #FD6E0A;
     border-radius: 5px;
     color: #FFFFFF;
     border: 0;
     padding: 18px 35px;
+    height: 64px;
+}
+.btn-cv {
+    width: 200px;
+}
+.btn-hire, .btn-submit {
+    width: 150px;
+}
+.btn-contact {
+    border: 0;
+    width: 160px;
+    height: 64px;
+    border: 1px solid #FD6E0A;
+    border-radius: 5px;
+    font-weight: 700;
+font-size: 20px;
+color: #FD6E0A;
+background-color: transparent;
 }
 section {
     margin-top: 130px;
@@ -46,6 +63,7 @@ nav li {
     list-style: none;
     margin-left: 50px;
 }
+
 
 /* banner styles */
 
@@ -202,4 +220,34 @@ main {
     font-weight: 400;
     font-size: 16px;
     color: #757575;
+}
+/* contact */
+.contact {
+    margin-top: 113px;
+    display: flex;
+    column-gap: 117px;
+    padding: 113px 200px;
+    background: #FFF8F3;
+}
+.contact-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #474747;
+    margin-bottom: 30px;
+}
+.contact input[type="text"], input[type="email"], textarea {
+    margin-bottom: 24px;
+    border: 0;
+    width: 100%;
+    padding: 18px 30px;
+    
+}
+
+input[type="text"], input[type="email"] {
+    height: 64px;
+}
+
+.contact a {
+    text-decoration: none;
+    margin-right: 24px;
 }
