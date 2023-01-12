@@ -19,9 +19,10 @@ hr {
     padding: 18px 35px;
     height: 64px;
 }
-/* .btn-cv {
-    width: 200px;
-} */
+.btn-cv {
+    margin-bottom: 5px;
+    margin-right: 24px;
+}
 /* .btn-hire, .btn-submit {
     width: 150px;
 } */
@@ -35,7 +36,7 @@ hr {
     font-size: 20px;
     color: #FD6E0A;
     background-color: transparent;
-    margin-left: 24px;
+    
 }
 section {
     margin-top: 130px;
@@ -47,9 +48,9 @@ section {
     background-image: url('../images/header_bg.png'), url('../images/developer.png');
     background-repeat: no-repeat;
     background-position: bottom right, 5%;
-    /* overflow: hidden; */
-    /* background-size: auto, 100px 600px; */
+    height: auto;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -63,25 +64,28 @@ nav {
 nav ul {
     display: flex;
     align-items: center;
+    gap: 50px;
 }
 nav li {
     list-style: none;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 
 /* banner styles */
 
 .banner {
-    /* margin: 0 200px; */
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-end;
+    height: inherit;
 }
 .banner-intro {
+    width: 50%;
     margin-left: 200px;
+    margin-bottom: 50px;
+    align-self: center;
 }
-.banner-greating {
+.banner-greeting {
     font-weight: 600;
     font-size: 45px;
     color: #474747;
@@ -100,6 +104,16 @@ nav li {
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 30px;
+}
+.banner-img {
+    display: flex;
+    width: 50%;
+    margin-right: 30px;
+}
+
+.banner img {
+    width: 100%;
+    
 }
 /* main section */
 main {
@@ -136,10 +150,6 @@ main {
     justify-content: space-around;
 }
 
-.about-info-item {
-
-}
-
 .info-title {
     font-weight: 400;
     font-size: 20px;
@@ -153,16 +163,12 @@ main {
 }
 /* skills section */
 
-.myskills {
-    
-}
-
-.myskills .section-title {
+.my-skills .section-title {
     text-align: center;
     padding: 0 157px;
 } 
 
-.myskills .section-description {
+.my-skills .section-description {
     text-align: center;
     padding: 0 157px; 
     margin-bottom: 50px;
@@ -193,9 +199,6 @@ main {
     font-size: 16px;
 }
 /* resume section */
-.resume {
-    
-}
 .resume-content {
     display: flex;
     margin-top: 113px;
@@ -258,4 +261,212 @@ input[type="text"], input[type="email"] {
 .contact a {
     text-decoration: none;
     margin-right: 24px;
+}
+
+@media screen and (max-width: 576px){
+    section {
+        margin-top: 50px;
+    }
+    .my-skills .section-title {
+        padding: 0;
+    }
+    .header {
+        background-image: none;
+        height: auto;
+    }
+    /* nav */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul {
+        /* flex-direction: column;
+        align-items: flex-start;
+        gap: 20px; */
+        display: inline;
+        text-align: center;
+        margin-left: -38px;
+    }
+    .btn-primary {
+        height: auto;
+        font-size: 14px;
+    }
+    .btn-contact {
+        height: 55px;
+        font-size: 14px;
+    }
+    .btn-cv {
+        margin-right: 0;
+    }
+    nav ul li {
+        margin-bottom: 5px;
+    }
+    /* banner */
+    .banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-intro {
+        width: 100%;
+        text-align: center;
+        padding: 20px 10px;
+    }
+    .banner-greeting {
+    font-size: 35px;
+    }
+
+    .banner-title {
+    font-size: 65px;
+    }
+    .banner-description {
+    font-size: 16px;
+    }
+    .banner-img {
+        width: 100%;
+    }
+    .banner-intro {
+        margin: 0;
+    }
+    
+    /* main */
+    main {
+        margin: 0 20px;
+    }
+    /* about */
+    .about {
+        padding: 50px 20px;
+    }
+    .about-info-container  {
+        flex-direction: column;
+    }
+    .about-info-item {
+        padding: 10px 0;
+      }
+    /* skills */
+    .my-skills .section-description {
+        padding: 0 20px;
+    }
+    .skill {
+        width: 100%;
+        height: 100%;
+    }
+    .skills-container {
+        flex-direction: column;
+        /* margin: 0 20px; */
+    }
+    /* resume */
+    .resume-content {
+        margin: 50px 10px;
+        flex-direction: column;
+    }
+    /* contact */
+    .contact {
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 20px;
+        gap: 20px;
+    }
+}
+
+
+
+@media screen and (min-width: 577px) and (max-width:992px) {
+    main {
+        margin: 0 30px;
+    }
+    section {
+        margin-top: 70px;
+    }
+    /* header */
+    .header {
+        background-image: url('../images/header_bg.png');
+        height: auto;
+    }
+    /* nav */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* banner */
+    .banner {
+        padding: 0 20px;
+    }
+    .banner-intro {
+        width: 50%;
+        margin-left: 0;
+    }
+    .banner-greeting {
+    font-size: 25px;
+    }
+
+    .banner-title {
+    font-size: 45px;
+    }
+    .banner-description {
+    font-size: 14px;
+    }
+    .banner-img {
+        width: 50%;
+        margin: 0;
+    }
+    
+    .banner img {
+        width: 100%;
+    }
+
+    .btn-primary {
+        height: auto;
+        font-size: 16px;
+    }
+    .btn-contact {
+        height: 55px;
+        font-size: 16px;
+    }
+
+    .btn-contact {
+        margin: 0;
+    }
+    /* about */
+    .about {
+        padding: 50px 20px;
+    }
+    .about-info-container {
+        flex-direction: column;
+    }
+    .about-info-item {
+        padding: 10px 0;
+      }
+    /* skills */
+    .my-skills .section-description {
+        padding: 0 20px;
+    }
+
+    .skills-container {
+        padding: 0 10px;
+        flex-wrap: wrap;
+        /* justify-content: flex-start; */
+    }
+    .skill {
+        flex-shrink: 1;
+        flex-grow: 1;
+        flex-basis: 267px;     
+    }
+    /* resume */
+    .resume-content {
+        margin: 50px 10px;
+        flex-direction: column;
+    }
+    /* contact */
+    .contact {
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 30px;
+        gap: 20px;
+    }
+}
+
+.hide {
+    display: none;
 }
